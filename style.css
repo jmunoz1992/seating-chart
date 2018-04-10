@@ -1,0 +1,98 @@
+div.mainContent {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1#title {
+  margin-top: 900px;
+  margin-bottom: 100px;
+  color: black;
+}
+
+h1 {
+  padding: 10px;
+}
+
+h1#teacherDesks {
+  margin-bottom: 300px;
+}
+
+h1#bathrooms {
+  margin-top: 50px;
+}
+
+.tables {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+
+.table {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.quad {
+  height: 200px;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.seat {
+  border: double;
+  height: 50px;
+  width: 50px;
+  padding: 22px;
+  text-align: center;
+  background-color: white;
+}
+
+.trio {
+  height: 300px;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.trio, .quad {
+  background: url("https://images.freecreatives.com/wp-content/uploads/2016/01/Free-Vector-Wooden-Background-Texture.jpg") no-repeat;
+}
+
+h1, .trio, .quad {
+  border: 5px solid #696969;
+}
+
+button {
+  background: #696969;
+  background-image: -webkit-linear-gradient(top, #696969, #696969);
+  background-image: -moz-linear-gradient(top, #696969, #696969);
+  background-image: -ms-linear-gradient(top, #696969, #696969);
+  background-image: -o-linear-gradient(top, #696969, #696969);
+  background-image: linear-gradient(to bottom, #696969, #696969);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 30px 30px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #696969;
+  background-image: -webkit-linear-gradient(top, #696969, #696969);
+  background-image: -moz-linear-gradient(top, #696969, #696969);
+  background-image: -ms-linear-gradient(top, #696969,#696969);
+  background-image: -o-linear-gradient(top, #696969,#696969);
+  background-image: linear-gradient(to bottom, #696969,#696969);
+  text-decoration: none;
+}
