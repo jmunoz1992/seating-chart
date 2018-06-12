@@ -1,45 +1,58 @@
-const students = [
-  'Andrew Wenman',
-  'Caitlin Trussell',
-  'Chris Jones',
-  'Chris Miller',
-  'Cody Fayolle',
-  'Dan Feeney',
-  'Daniel Simandl',
-  'David Fudacz',
-  'David Lu',
-  'Jaime Syvino',
-  'Joey Deeds',
-  'John Walsh',
-  'Josh Remaley',
-  'Mary Warrick',
-  'Matthew Chan',
-  'Nick Angelos',
-  'Olivia Lam',
-  'Rashaun Warner',
-  'Richard Liang',
-  'Ricky Li',
-  'Roman Zalov',
-  'Samson Fanuel',
-  'Samuel Kogan',
-  'Vi Tran',
-  'Victor Barrancos',
-  'Jasmine Munoz',
-];
+const students =
+  `Brandon Yee
+  Chris Lusk
+  Jehoshuah Knapp
+
+  Michael Bush
+  Nick Bohannan
+
+  Diego Andres Hernandorena
+  Kevin Lim
+
+  Jerry Wu
+  Matthew Noesen
+
+  Jan Gierlach
+  Patrick Kilgore
+
+  Bradley Schwartz
+  Jessica Smith
+
+  Jacoby Kang
+  Raymond Chao
+
+  Matt Ehlinger
+  Richard Hui
+
+  Evelyn LaTour
+  Hollie Lambert
+
+  Brad Smith
+  Eliot Davis
+
+  Jeff Hauser
+  Kayleen Offringa
+
+  Brendan Meyer
+  Zohaib Farooqi`;
+
+console.log('students split ', students.split('\n'));
 
 document.getElementById('randomize-btn').addEventListener("click", function() {
-  const newStudents = shuffle(students);
+  const newStudents = students.split('\n');
   let index = 1;
   newStudents.map(student => {
-    const getTable = document.getElementById(`seat${index}`);
-    if (getTable.childNodes.length) {
-      getTable.removeChild(getTable.childNodes[0]);
+    if (student !== "") {
+      const getTable = document.getElementById(`seat${index}`);
+      if (getTable.childNodes.length) {
+        getTable.removeChild(getTable.childNodes[0]);
+      }
+      const nameTag = document.createElement('p');
+      const name = document.createTextNode(student);
+      nameTag.appendChild(name);
+      getTable.appendChild(nameTag);
+      index++;
     }
-    const nameTag = document.createElement('p');
-    const name = document.createTextNode(student);
-    nameTag.appendChild(name);
-    getTable.appendChild(nameTag);
-    index++;
   });
 });
 
