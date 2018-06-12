@@ -1,5 +1,4 @@
 const students = [
-  'Shaheed Samsi',
   'Andrew Wenman',
   'Caitlin Trussell',
   'Chris Jones',
